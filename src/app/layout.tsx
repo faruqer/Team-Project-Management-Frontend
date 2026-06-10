@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Orbit — Project Management",
+  title: "Orbit | Team and Project Management",
   description: "Multi-tenant SaaS project management platform",
 };
 
