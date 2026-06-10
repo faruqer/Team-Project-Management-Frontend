@@ -1,0 +1,53 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.chart {
+  margin-top: 0.5rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.rateCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.rateValue {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-hover);
+  margin: 0.75rem 0;
+}
+
+.rateBar {
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.rateFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #a78bfa);
+  border-radius: 999px;
+  transition: width 0.6s ease-out;
+}

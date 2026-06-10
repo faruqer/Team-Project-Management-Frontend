@@ -1,0 +1,75 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.calendarCard {
+  overflow: hidden;
+}
+
+.calendarCard :global(.rbc-calendar) {
+  font-family: inherit;
+  color: var(--text-primary);
+}
+
+.calendarCard :global(.rbc-toolbar) {
+  margin-bottom: 1rem;
+}
+
+.calendarCard :global(.rbc-toolbar button) {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  padding: 0.35rem 0.75rem;
+}
+
+.calendarCard :global(.rbc-toolbar button:hover),
+.calendarCard :global(.rbc-toolbar button.rbc-active) {
+  background: var(--accent-glow);
+  color: var(--accent-hover);
+}
+
+.calendarCard :global(.rbc-header) {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+
+.calendarCard :global(.rbc-month-view),
+.calendarCard :global(.rbc-day-bg) {
+  border-color: var(--border);
+}
+
+.calendarCard :global(.rbc-off-range-bg) {
+  background: var(--bg-tertiary);
+}
+
+.calendarCard :global(.rbc-today) {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.eventProject :global(.rbc-event-content) {
+  background: #6366f1 !important;
+  border-color: #6366f1 !important;
+}
+
+.eventTask :global(.rbc-event-content) {
+  background: #22c55e !important;
+  border-color: #22c55e !important;
+}
+
+.detail {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

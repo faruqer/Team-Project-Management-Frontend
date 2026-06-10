@@ -1,0 +1,41 @@
+.layout {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 720px;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.logoPreview {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-hover);
+  overflow: hidden;
+}
+
+.logoPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.loading {
+  color: var(--text-muted);
+}
